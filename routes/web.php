@@ -34,3 +34,7 @@ Route::get('/services', 'PagesController@services');
 
 //     return 'this is a user'. $id;
 // });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
